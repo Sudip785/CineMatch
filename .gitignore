@@ -1,4 +1,22 @@
 
-.env
+# Python
 __pycache__/
+*.py[cod]
 .venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.ppk
+secrets/
+
+# Node.js
+node_modules/
+
+# Logs and editor files
+*.log
+.vscode/
+.idea/
