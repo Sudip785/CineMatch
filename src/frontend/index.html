@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMatch | Discover Your Next Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo"><span>CINE</span>MATCH</a>
+        <span class="nav-label">MOVIE DISCOVERY</span>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">YOUR NEXT FAVORITE FILM AWAITS</p>
+            <h1>Find movies<br>that <span>match your taste.</span></h1>
+            <p class="subtitle">
+                Discover your next watch with personalized movie recommendations.
+                Search for a title and let CineMatch do the rest.
+            </p>
+
+            <form id="search-form" class="search-form">
+                <span class="search-icon">⌕</span>
+                <input
+                    type="text"
+                    id="movie-input"
+                    placeholder="Search a movie, e.g. Batman"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit">Find Movies <span>→</span></button>
+            </form>
+
+            <p class="search-hint">No release year needed. Just enter a movie name.</p>
+        </section>
+
+        <section id="status-section" class="status-section" aria-live="polite">
+            <p id="status-message"></p>
+            <div id="matching-movies" class="matching-movies"></div>
+        </section>
+
+        <section id="recommendations-section" class="results-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">CURATED FOR YOU</p>
+                    <h2 id="results-title">Discover similar movies</h2>
+                </div>
+                <span class="results-count" id="results-count"></span>
+            </div>
+
+            <div id="recommendations" class="movie-grid">
+                <div class="empty-state">
+                    <span class="empty-icon">✦</span>
+                    <h3>Your next movie night starts here</h3>
+                    <p>Search for a movie above to discover films with similar genres.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="logo"><span>CINE</span>MATCH</a>
+        <p>Built to help you find your next favorite movie.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
