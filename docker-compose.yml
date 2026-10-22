@@ -1,15 +1,19 @@
 
 services:
   backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: cinematch-backend:latest
     container_name: backend
-    ports:
-      - "8000:8000"
     env_file:
       - .env
 
   frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
     image: cinematch-frontend:latest
     container_name: frontend
     ports:
-      - "8081:80"
+      - "80:80"
